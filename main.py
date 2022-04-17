@@ -20,7 +20,6 @@ def bestOf5(lang,lit,math,hin,phy,chem,bio,his,geo,com_eco):
     for i in range(0,len(group)-1):
         for j in range(len(group)-1):
             if(group[j]>group[j+1]):
-                a
                 temp = group[j]  
                 group[j] = group[j+1]  
                 group[j+1] = temp
