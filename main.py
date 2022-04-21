@@ -8,12 +8,12 @@ import random
 def bestOf5(lang,lit,math,hin,phy,chem,bio,his,geo,com_eco):
     #GROUPING OF SUBJECTS
     group = [0,0,0,0,0,0]
-    group[0] = (int(lang) + int(lit)) / 2 #english
-    group[1] = (int(phy) + int(chem) + int(bio)) / 3 #science
-    group[2] = (int(his) + int(geo))/2 # arts
-    group[3] = int(hin)
-    group[4] = int(math)
-    group[5] = int(com_eco)
+    compulsoryEnglish = (int(lang) + int(lit)) / 2 #english
+    group[0] = (int(phy) + int(chem) + int(bio)) / 3 #science
+    group[1] = (int(his) + int(geo))/2 # arts
+    group[2] = int(hin)
+    group[3] = int(math)
+    group[4] = int(com_eco)
 
     #BUBBLESORTING
 
@@ -26,7 +26,7 @@ def bestOf5(lang,lit,math,hin,phy,chem,bio,his,geo,com_eco):
 
 
     #CALCULATING PERCENTAGE
-    percentage = (group[0] + group[1] + group[2] + group[3] + group[4] ) / 5
+    percentage = (group[4] + group[3] + group[2] + group[1] + compulsoryEnglish) / 5
 
     return percentage
 
