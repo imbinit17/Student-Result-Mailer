@@ -1,5 +1,4 @@
 import smtplib
-import imghdr
 from email.message import EmailMessage
 
 def sendMail(Receiver_Email,Subject,message,files):
